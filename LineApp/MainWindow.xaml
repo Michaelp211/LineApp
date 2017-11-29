@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LineApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="763" Width="830">
     <Grid>
+        <Button Content="Draw a Line" HorizontalAlignment="Left" Margin="65,634,0,0" VerticalAlignment="Top" Width="93" Click="btnDrawLine_Click"/>
+        <Grid x:Name="mainGrid" HorizontalAlignment="Left" Height="598" Margin="10,10,0,0" VerticalAlignment="Top" Width="804"/>
+        <Button Content="Draw a Rectangle&#xA;" HorizontalAlignment="Left" Margin="190,634,0,0" VerticalAlignment="Top" Width="96" Height="21" Click="btnDrawRectangle_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.376"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Draw an Ellipse" HorizontalAlignment="Left" Margin="323,634,0,0" VerticalAlignment="Top" Width="93" Click="btnDrawEllipse_Click"/>
+        <Button Content="Draw a Square" HorizontalAlignment="Left" Margin="457,634,0,0" VerticalAlignment="Top" Width="93" Click="btnDrawSquare_Click"/>
+        <Button Content="Draw a triangle" HorizontalAlignment="Left" Margin="591,634,0,0" VerticalAlignment="Top" Width="90" Click="btnDrawPolygon"/>
+        <Button Content="Draw a Circle" HorizontalAlignment="Left" Margin="728,633,0,0" VerticalAlignment="Top" Width="75" Click="btnDrawCircle_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="374,695,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+        <Button Content="Click for an image" HorizontalAlignment="Left" Margin="65,695,0,0" VerticalAlignment="Top" Width="109" Click="btnImageShow_Click"/>
         
     </Grid>
 </Window>
